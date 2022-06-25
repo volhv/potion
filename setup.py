@@ -19,8 +19,8 @@ setup(name='potion',
       },
       zip_safe=False,
       description='Potion: data sources helper library',
-      package_dir={'potion': 'src/potion'},
-      packages=['potion'],
+      package_dir={'potion': 'src/potion', 'potion.util': 'src/potion/util'},
+      packages=['potion', 'potion.util'],
       entry_points={
         'console_scripts': []
       })
